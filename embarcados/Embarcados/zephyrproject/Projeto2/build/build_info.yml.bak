@@ -1,0 +1,5 @@
+west:
+  command: C:\Users\brun0\Documents\Embarcados\zephyrproject\.venv\Scripts\west build
+    -b nucleo_g474re --pristine
+  topdir: C:\Users\brun0\Documents\Embarcados\zephyrproject
+  version: 1.5.0

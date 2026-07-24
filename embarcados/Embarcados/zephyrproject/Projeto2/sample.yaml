@@ -1,0 +1,37 @@
+sample:
+  description: Hello World sample, the simplest Zephyr
+    application
+  name: hello world
+common:
+  min_ram: 2
+  min_flash: 16
+  tags:
+    - introduction
+    - drivers
+    - pwm
+  integration_platforms:
+    - native_sim
+    - nucleo_g474re
+  harness:
+    - console
+    - led
+    - motor
+  filter:
+    - dt_compat_enabled("pwm-servo")
+  harness_config:
+    type: one_line
+    regex:
+      - "Hello World! (.*)"
+tests:
+  sample.basic.helloworld:
+    tags:
+      - introduction
+      - LED
+      - gpio
+      - button
+    depends_on:
+      - gpio
+      - pwm
+    filter:
+      - dt_enabled_alias_with_parent_compat("sw0", "gpio-keys")
+    harness: button

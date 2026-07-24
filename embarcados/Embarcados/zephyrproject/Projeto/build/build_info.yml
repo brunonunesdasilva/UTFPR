@@ -1,0 +1,61 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Users/brun0/Documents/Embarcados/zephyrproject/Projeto'
+    source-dir: 'C:/Users/brun0/Documents/Embarcados/zephyrproject/Projeto'
+  board:
+    name: 'nucleo_g474re'
+    path:
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/boards/st/nucleo_g474re'
+    qualifiers: 'stm32g474xx'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/dts/bindings'
+    files:
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/boards/st/nucleo_g474re/nucleo_g474re.dts'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/Projeto/boards/nucleo_g474re.overlay'
+    include-dirs:
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/modules/hal/ambiq/dts'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/modules/hal/atmel/include'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/modules/hal/bouffalolab/include'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/modules/hal/gigadevice/include'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/modules/hal/microchip/include'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/modules/hal/microchip/dts'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/modules/hal/nuvoton/dts'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/modules/hal/nxp/dts'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/modules/hal/stm32/dts'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/modules/hal/ti/dts'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/include'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/include/zephyr'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/dts/common'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/dts/vendor'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/dts/rx'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/dts/x86'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/dts/xtensa'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/dts/sparc'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/dts/riscv'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/dts/posix'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/dts/arm64'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/dts/arm'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/dts/arc'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/dts'
+    user-files:
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/Projeto/boards/nucleo_g474re.overlay'
+  kconfig:
+    files:
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr/boards/st/nucleo_g474re/nucleo_g474re_defconfig'
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/Projeto/prj.conf'
+    user-files:
+     - 'C:/Users/brun0/Documents/Embarcados/zephyrproject/Projeto/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/brun0/zephyr-sdk-0.17.4'
+  zephyr:
+    version: '4.3.99'
+    zephyr-base: 'C:/Users/brun0/Documents/Embarcados/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: 'C:\Users\brun0\Documents\Embarcados\zephyrproject\.venv\Scripts\west build -b nucleo_g474re --pristine'
+  topdir: 'C:\Users\brun0\Documents\Embarcados\zephyrproject'
+  version: '1.5.0'
